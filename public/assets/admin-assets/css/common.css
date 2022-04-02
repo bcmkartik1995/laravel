@@ -1,0 +1,98 @@
+.table th, .table td {
+    padding: 1.15rem 1rem;
+}
+.error {
+    color: red !important;
+}
+.set-logo {
+    margin-top: 50px;
+}
+.txt-white{
+    color: #ffff !important;
+}
+.cusor-pointer{
+    cursor: pointer;
+}
+.img-upload #image-preview {
+    width: 240px;
+    height: 240px;
+    border: 1px dashed #000;
+    color: #ecf0f1;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.img-upload #image-preview label {
+    z-index: 5;
+    width: 120px;
+    height: 40px;
+    background-color: #ffffff;
+    color: #143250;
+    font-size: 14px;
+    line-height: 40px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    margin-left: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    box-shadow: 0px 0px 15px #eaeaea;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.img-upload #image-preview input {
+    width: 120px;
+    height: 40px;
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+.rate {
+float: left;
+height: 46px;
+padding: 0 10px;
+}
+.rate:not(:checked) > input {
+position:absolute;
+top:-9999px;
+}
+.rate:not(:checked) > label {
+float:right;
+width:1em;
+overflow:hidden;
+white-space:nowrap;
+cursor:pointer;
+font-size:30px;
+color:#ccc;
+}
+.rate:not(:checked) > label:before {
+content: '★ ';
+}
+.rate > input:checked ~ label {
+color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked  label:hover  label,
+.rate > label:hover  input:checked  label {
+color: #c59b08;
+}
